@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+body nav {
+  width: 100vw;
+  display: flex;
+  justify-content: right;
+}
+body nav .screen_mode {
+  margin: 50px 30px 0 0;
+}
+body nav .screen_mode #screen_mode {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+body nav .screen_mode #screen_mode .mode_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav .screen_mode #screen_mode .mode_logos #sun_logo {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  opacity: 0;
+}
+body nav .screen_mode #screen_mode .mode_logos #moon_logo {
+  width: 2.5em;
+  height: 2.5em;
+}
+body .header_logo {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+body .header_logo .app_state {
+  font-size: 1.3rem;
+  background-color: #9f9797;
+  color: black;
+  padding: 0.2em 1em;
+}
+
+body.nite_mode {
+  background-color: black;
+  color: white;
+}
+body.nite_mode nav .screen_mode #screen_mode {
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+body.nite_mode nav .screen_mode #screen_mode .mode_logos #sun_logo {
+  opacity: 1;
+}
+body.nite_mode nav .screen_mode #screen_mode .mode_logos #moon_logo {
+  opacity: 0;
+}
+body.nite_mode .header_logo .app_state {
+  background-color: #393636;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

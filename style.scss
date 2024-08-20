@@ -17,6 +17,8 @@ body {
     justify-content: center;
     align-items: center;
     color: black;
+    margin: 0 50px 0 50px;
+    transition: .2s all ease;
     // Top Nav Bar
     nav {
         // background-color: darkblue;
@@ -63,6 +65,39 @@ body {
             padding: .2em 1em;
         }
     }
+    // FORM
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+        height: 50vh;
+        width: 100%;
+        
+        // background-color: blue;
+        .input_div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            label {
+                font-weight: normal;
+            }
+            input {
+                padding: .7em 5em;
+                // width: 100%;
+                border: 1px solid black;
+            }
+        }
+        .submit_button {
+            background-color: $thegrey;
+            color: white;
+            border: none;
+            padding: .7em;
+            width: 100%;
+            font-size: .9rem;
+        }
+    }
 }
 
 // NITE MODE
@@ -92,5 +127,16 @@ body.nite_mode {
             background-color: $greyed-dark;
             color: white;
         }
+    }
+    // FORM
+    .input_div {
+        input {
+            border: 1px solid white;
+            background-color: black;
+        }
+    }
+    .submit_button {
+        background-color: $greyed-dark;
+        color: black;
     }
 }

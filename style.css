@@ -9,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
+  margin: 0 50px 0 50px;
+  transition: 0.2s all ease;
 }
 body nav {
   width: 100vw;
@@ -52,6 +54,35 @@ body .header_logo .app_state {
   color: black;
   padding: 0.2em 1em;
 }
+body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  height: 50vh;
+  width: 100%;
+}
+body form .input_div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body form .input_div label {
+  font-weight: normal;
+}
+body form .input_div input {
+  padding: 0.7em 5em;
+  border: 1px solid black;
+}
+body form .submit_button {
+  background-color: #9f9797;
+  color: white;
+  border: none;
+  padding: 0.7em;
+  width: 100%;
+  font-size: 0.9rem;
+}
 
 body.nite_mode {
   background-color: black;
@@ -71,4 +102,12 @@ body.nite_mode nav .screen_mode #screen_mode .mode_logos #moon_logo {
 body.nite_mode .header_logo .app_state {
   background-color: #393636;
   color: white;
+}
+body.nite_mode .input_div input {
+  border: 1px solid white;
+  background-color: black;
+}
+body.nite_mode .submit_button {
+  background-color: #393636;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

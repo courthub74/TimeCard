@@ -98,6 +98,15 @@ body {
             font-size: .9rem;
         }
     }
+
+    // Register Link
+    .register_link {
+        a {
+            color: #393636;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
 }
 
 // NITE MODE
@@ -129,14 +138,22 @@ body.nite_mode {
         }
     }
     // FORM
-    .input_div {
-        input {
-            border: 1px solid white;
-            background-color: black;
+    form {
+        .input_div {
+            input {
+                border: 1px solid white;
+                background-color: black;
+            }
+        }
+        .submit_button {
+            background-color: $greyed-dark;
+            color: black;
         }
     }
-    .submit_button {
-        background-color: $greyed-dark;
-        color: black;
+    // REGISTRATION LINK
+    .register_link {
+        a {
+            color: white;
+        }
     }
 }

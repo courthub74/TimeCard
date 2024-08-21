@@ -83,6 +83,11 @@ body form .submit_button {
   width: 100%;
   font-size: 0.9rem;
 }
+body .register_link a {
+  color: #393636;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 body.nite_mode {
   background-color: black;
@@ -103,11 +108,14 @@ body.nite_mode .header_logo .app_state {
   background-color: #393636;
   color: white;
 }
-body.nite_mode .input_div input {
+body.nite_mode form .input_div input {
   border: 1px solid white;
   background-color: black;
 }
-body.nite_mode .submit_button {
+body.nite_mode form .submit_button {
   background-color: #393636;
   color: black;
+}
+body.nite_mode .register_link a {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

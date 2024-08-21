@@ -79,7 +79,8 @@ body {
         .input_div {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            // width: 100%;
+            max-width: 50rem;
             label {
                 font-weight: normal;
             }
@@ -93,8 +94,9 @@ body {
             background-color: $thegrey;
             color: white;
             border: none;
-            padding: .7em;
-            width: 100%;
+            padding: .7em 8.5em;
+            // width: 100%;
+            // max-width: 50em;
             font-size: .9rem;
         }
     }

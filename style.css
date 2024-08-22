@@ -61,7 +61,7 @@ body form {
   align-items: center;
   justify-content: center;
   gap: 3em;
-  height: 50vh;
+  height: 65vh;
   width: 100%;
 }
 body form .input_div {
@@ -118,6 +118,9 @@ body form .reminders .remember_me {
 }
 body form .reminders .remember_me #remember_checkbox:checked {
   accent-color: black;
+}
+body .register_link {
+  padding: 0em 0 0 0;
 }
 body .register_link a {
   color: #393636;

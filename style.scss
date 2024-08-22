@@ -80,6 +80,7 @@ body {
         .input_div {
             display: flex;
             flex-direction: column;
+            gap: .5em;
             // width: 100%;
             max-width: 50rem;
             label {
@@ -95,6 +96,7 @@ body {
             display: flex;
             flex-direction: column;
             max-width: 50rem;
+            gap: .5em;
             // Pin Number
             .pins {
                 display: flex;
@@ -112,13 +114,15 @@ body {
             justify-content: center;
             align-items: center;
             max-width: 50rem;
-            background-color: blue;
+            // background-color: blue;
             .submit_button {
                 background-color: $thegrey;
                 color: white;
                 border: none;
-                padding: .7em 8.5em;
+                // padding: .7em 8.5em;
+                padding: 1em 8.5em;
                 font-size: .9rem;
+                font-weight: bold;
                 cursor: pointer;
             }
         }
@@ -131,6 +135,10 @@ body {
             // background-color: blue;
             .remember_me {
                 display: flex;
+                gap: .5em;
+                #remember_checkbox:checked {
+                    accent-color: black;
+                }
             }
         }
     }
@@ -190,7 +198,14 @@ body.nite_mode {
         }
         .submit_button {
             background-color: $greyed-dark;
-            color: black;
+            color: white;
+        }
+        // Remember Me
+        .remember_me {
+            #remember_checkbox:checked {
+                border: 1px solid white;
+                accent-color: black;
+            }
         }
     }
     // REGISTRATION LINK

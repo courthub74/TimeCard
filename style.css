@@ -67,6 +67,7 @@ body form {
 body form .input_div {
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
   max-width: 50rem;
 }
 body form .input_div label {
@@ -80,6 +81,7 @@ body form .pin_put_div {
   display: flex;
   flex-direction: column;
   max-width: 50rem;
+  gap: 0.5em;
 }
 body form .pin_put_div .pins {
   display: flex;
@@ -96,14 +98,14 @@ body form .button_div {
   justify-content: center;
   align-items: center;
   max-width: 50rem;
-  background-color: blue;
 }
 body form .button_div .submit_button {
   background-color: #aaa9a9;
   color: white;
   border: none;
-  padding: 0.7em 8.5em;
+  padding: 1em 8.5em;
   font-size: 0.9rem;
+  font-weight: bold;
   cursor: pointer;
 }
 body form .reminders {
@@ -112,6 +114,10 @@ body form .reminders {
 }
 body form .reminders .remember_me {
   display: flex;
+  gap: 0.5em;
+}
+body form .reminders .remember_me #remember_checkbox:checked {
+  accent-color: black;
 }
 body .register_link a {
   color: #393636;
@@ -148,7 +154,11 @@ body.nite_mode form .pin_put_div .pins .pin_put {
 }
 body.nite_mode form .submit_button {
   background-color: #393636;
-  color: black;
+  color: white;
+}
+body.nite_mode form .remember_me #remember_checkbox:checked {
+  border: 1px solid white;
+  accent-color: black;
 }
 body.nite_mode .register_link a {
   color: white;

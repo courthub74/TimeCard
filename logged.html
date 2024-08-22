@@ -33,7 +33,7 @@
     </header>
 
     <!-- Forms -->
-     <form action="#">
+     <form action="#" id="form_loggedin">
         <div class="input_div">
             <label for="firstname">First Name:</label>
             <input type="text">
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="pin_put_div">
+        <!-- <div class="pin_put_div">
             <label for="password">Confirm Pin #:</label>
             <div class="pins">
                 <input class="pin_put" type="password" maxlength="1">
@@ -62,8 +62,24 @@
                 <input class="pin_put" type="password" maxlength="1">
                 <input class="pin_put" type="password" maxlength="1">
             </div>
+        </div> -->
+
+        <div class="button_div">
+            <button class="submit_button">Submit</button>
+        </div>
+
+        <!-- Remember Me -->
+        <div class="reminders" id="logged_remember">
+            <div class="remember_me">
+                <p>Remember Me:</p>
+                <input type="checkbox" id="remember_checkbox">
+            </div>
         </div>
      </form>
+
+     <div class="register_link" id="logged_register">
+        <a href="logged.html">Create your account HERE</a>
+     </div>
 
     <script src="screen_mode.js"></script>
 </body>

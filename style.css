@@ -60,10 +60,9 @@ body form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3em;
+  gap: 2.5em;
   height: 60vh;
   width: 100%;
-  background-color: blue;
 }
 body form .input_div {
   display: flex;
@@ -119,6 +118,15 @@ body form .reminders .remember_me {
 }
 body form .reminders .remember_me #remember_checkbox:checked {
   accent-color: black;
+}
+body #form_loggedin {
+  margin: 0em 0 0 0;
+}
+body #logged_remember {
+  opacity: 0;
+}
+body #logged_register {
+  opacity: 0;
 }
 body .register_link {
   padding: 0em 0 0 0;

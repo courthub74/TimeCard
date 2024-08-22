@@ -63,6 +63,7 @@ body form {
   gap: 3em;
   height: 60vh;
   width: 100%;
+  background-color: blue;
 }
 body form .input_div {
   display: flex;
